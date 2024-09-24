@@ -1,19 +1,13 @@
-"""
-Main cli or app entry point
-"""
+from mylib.lib import statistics
+from tabulate import tabulate
 
-from mylib.calculator import add
-import click
 
-#var=1;var=2
-
-@click.command("add")
-@click.argument("a", type=int)
-@click.argument("b", type=int)
-def add_cli(a, b):
-    click.echo(add(a, b))
+def print_table():
+    mean, median, std = statistics()
+    table_data = [["Mean", mean], ["Median", median], ["Standard Deviation", std]]
+    print(tabulate(table_data, headers=["Statistic", "Value"], tablefmt="fancy_grid"))
+    return table_data
 
 
 if __name__ == "__main__":
-    # pylint: disable=no-value-for-parameter
-    add_cli()
+    print_table()

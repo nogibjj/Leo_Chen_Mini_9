@@ -1,37 +1,75 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
-
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
+# Leo Chen Individual 1
 
 
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+Reads a dataset (CSV)
 
-Things included are:
+Generates summary statistics (mean, median, standard deviation)
+
+Repository Contents:
+
+* `mylib/lib.py`
+
+* `test_lib.py`
+
+* `main.py`
+
+* `test_main.py`
+
+* `main.ipynb`
+
+* `.devcontainer`
+
+* `install.yml`
+
+* `format.yml`
+
+* `lint.yml`
+
+* `test.yml`
 
 * `Makefile`
 
-* `Pytest`
+* `requirements.txt`
 
-* `pandas`
+* `README.md`
 
-* `Ruff`:  
+* `bed_hist.png`
 
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
+## Data Source
 
-* `Dockerfile`
+**covid-geography**
 
-* `GitHub copilot`
+This file contains the data behind the story [How One High-Risk Community In Rural South Carolina Is Bracing For COVID-19](https://fivethirtyeight.com/features/how-one-high-risk-community-in-rural-south-carolina-is-bracing-for-covid-19/).
 
-* `jupyter` and `ipython` 
+`mmsa-icu-beds.csv` combines data from the Centers for Disease Control and Prevention’s [Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/smart/smart_2017.html), a collection of health-related surveys conducted each year of more than 400,000 Americans, and the [Kaiser Family Foundation](https://khn.org/news/as-coronavirus-spreads-widely-millions-of-older-americans-live-in-counties-with-no-icu-beds/#lookup) to show the number of people who are at high risk of becoming seriously ill from COVID-19 per ICU bed in each metropolitan area, micropolitan area or metropolitan division for which we have data.
 
-* A base set of libraries for devops and web
+Column | Description
+-------|-------------
+`MMSA` | The name of the metropolitan area, micropolitan area or metropolitan division available in the CDC’s BRFSS
+`total_percent_at_risk` | The percent of individuals in that area that are at high risk of becoming seriously ill from COVID-19, per CDC’s BRFSS
+`high_risk_per_icu_bed` | The number of high risk individuals per ICU bed in that area
+`high_risk_per_hospital` |  The number of high risk individuals per hospital in that area
+`icu_beds` | The number of ICU beds in the area, based on the Kaiser Family Foundation’s data
+`hospitals` | The number of hospitals in the area, based on the Kaiser Family Foundation’s data
+`total_at_risk` | The total number of high risk individuals in the area, per CDC’s BRFSS
 
-* `githubactions`
+*This project focuses on one column - `icu_beds`.*
 
-## References
+[Link to data](https://github.com/fivethirtyeight/data/tree/master/covid-geography)
 
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
+## Setup Instructions
 
+1. Open codespaces
 
+2. Load the repository into codespaces
 
+3. Run the Makefile command: `make all`
+
+## Result
+
+Mean = 360.185, Median = 221, Standard Deviation = 450.581
+
+Attaching the histogram below for quick reference.
+
+![histogram](bed_hist.png)
