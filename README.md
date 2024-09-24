@@ -5,6 +5,8 @@
 [![Lint](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/lint.yml)
 [![Test](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/test.yml)
 
+[Click here to download and view the demo video](https://github.com/nogibjj/Leo_Chen_Individual_1/raw/refs/heads/main/demo.mp4)
+
 Reads a dataset (CSV)
 
 Generates summary statistics (mean, median, standard deviation)
