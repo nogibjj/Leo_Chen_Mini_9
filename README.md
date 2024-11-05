@@ -1,15 +1,15 @@
-# Leo Chen Individual 1
+# Leo Chen Mini 9
 
-[![Install](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/install.yml)
-[![Format](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/format.yml)
-[![Lint](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/lint.yml)
-[![Test](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Individual_1/actions/workflows/test.yml)
+[![Install](https://github.com/nogibjj/Leo_Chen_Mini_9/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Mini_9/actions/workflows/install.yml)
+[![Format](https://github.com/nogibjj/Leo_Chen_Mini_9/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Mini_9/actions/workflows/format.yml)
+[![Lint](https://github.com/nogibjj/Leo_Chen_Mini_9/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Mini_9/actions/workflows/lint.yml)
+[![Test](https://github.com/nogibjj/Leo_Chen_Mini_9/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Leo_Chen_Mini_9/actions/workflows/test.yml)
 
-[Click here to download and view the demo video](https://github.com/nogibjj/Leo_Chen_Individual_1/raw/refs/heads/main/demo.mp4)
+[Link to cloud-hosted notebook](https://drive.google.com/file/d/15GeOffZP0VIZuPAKTDIZG3L7VF1e7noQ/view?usp=sharing)
 
-Reads a dataset (CSV)
+1. Reads a dataset (CSV)
 
-Generates summary statistics (mean, median, standard deviation)
+2. Generates summary statistics (mean, median, standard deviation)
 
 Repository Contents:
 
